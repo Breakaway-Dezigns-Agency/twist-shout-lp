@@ -1,0 +1,114 @@
+@import
+'./fonts',
+'./global',
+'./home',
+'./vendor/slick',
+'./vendor/fontello',
+'tailwindcss/base',
+'tailwindcss/components',
+'tailwindcss/utilities';
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+:root{
+  --font: 'Alef', sans-serif;
+  --font-title: 'Fredoka One', cursive;
+  --fontello: 'fontello';
+  --black: #2B353B;
+  --camo: #57886C;
+  --yellow: #FBBE0B;
+  --bbblue: #C0FDFB;
+  --teal:#DAFFEF;
+  --white: #FCFFFD;
+}
+
+*{
+ box-sizing: border-box;
+}
+html, body{
+ font-size: 1rem;
+//  font-weight: 400;
+//  background-color: var(--white);
+ font-family: var(--font);
+ color: var(--black);
+ font-display: swap;
+ scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6{
+ font-weight: 700;
+ line-height: initial;
+ margin-bottom: .25rem;
+}
+h1, h2{
+ font-size: 2rem;
+ @media (max-width: 790px) {
+   font-size: 1.6rem;
+ }
+}
+h3{
+ font-size: 1.75rem;
+ // @media (max-width: 790px) {
+ //   font-size: 1.35rem;
+ // }
+}
+h4{
+ font-size: 1.5rem;
+ // @media (max-width: 790px) {
+ //   font-size: 1.2rem;
+ // }
+}
+h5{
+ font-size: 1.25rem;
+}
+h6{
+ font-size: 1rem;
+}
+p{
+ margin-bottom: 1rem;
+}
+strong{
+ font-weight: 700;
+}
+ul{
+ li{
+     padding-left: 0.15rem;
+     &:before{
+       content: '\2022';
+      //  color: var(--yellow);
+       font-weight: 700;
+       display: inline-block;
+       width: 1.5rem;
+     }
+ }
+}
+a{
+ color: var(--blue);
+ margin-bottom: .5rem;
+ width: max-content;
+ &:hover{
+  text-decoration: underline;
+ }
+ &.alt{
+   color: var(--black);
+   font-weight: 500;
+   &:after{
+     content: '\e80e';
+     font-family: var(--fontello);
+     margin-left: .5rem;
+     font-weight: 500;
+   }
+ }
+}
+.btn{
+  display: block;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--camo);
+  background-color: var(--yellow);
+  &:hover{
+    color: var(--white);
+    background-color: var(--black);
+  }
+}

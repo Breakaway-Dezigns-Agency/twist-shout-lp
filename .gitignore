@@ -6,8 +6,3 @@ tailwind.config.js
 webpack.config.js
 webpack.config.dev.js
 webpack.config.prod.js
-src/fonts
-src/js
-src/js/vendor
-src/styles
-src/styles/vendor

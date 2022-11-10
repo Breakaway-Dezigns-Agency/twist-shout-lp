@@ -1,0 +1,119 @@
+header{
+    .btn{
+        background-color: var(--teal);
+    }
+}
+#hero{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/heros/hero-002.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    .hero-content{
+        left: 20%;
+        top: 50%;
+        transform: translate(-20%, -50%);
+        color: var(--white);
+    }
+    .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        svg{
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+            transform: rotateY(180deg);
+            @media (max-width: 790px){
+                height: 40px;
+            }
+        }
+        .shape-fill{
+            fill: #FFFFFF;
+        }
+    }
+}
+#services{
+    .services-wrap{
+        div{
+            font-weight: 700;
+            color: var(--white);
+            border-radius: 5px;
+            background-color: var(--yellow);
+            width: 100%;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--black);
+            }
+        }
+    }
+}
+#faqs{
+    position: relative;
+    background-color: var(--bbblue);
+    .line {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+            transform: rotateY(180deg);
+        }
+        .shape-fill {
+            fill: #FFFFFF;
+        }
+    }
+
+
+    .accordion {
+        background-color: var(--yellow);
+        color: var(--white);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        font-weight: 700;
+        transition: 0.4s;
+        border-bottom: .25px solid var(--camo);
+        &:first-child{
+            border-radius: 10px 10px 0 0;
+        }
+        &:last-child{
+            border-radius: 0 0 5px 5px;
+        }
+        &:hover{
+            background-color: var(--camo);
+        }
+        &.active {
+          background-color: var(--camo);
+        }
+    }
+    .panel {
+      padding: 2rem 1rem;
+      display: none;
+      background-color: var(--white);
+      overflow: hidden;
+    }
+}
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    a{
+        color: var(--white);
+    }
+}
