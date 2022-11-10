@@ -1,8 +1,1 @@
 node_modules
-package.json
-package-lock.json
-postcss.config.js
-tailwind.config.js
-webpack.config.js
-webpack.config.dev.js
-webpack.config.prod.js
