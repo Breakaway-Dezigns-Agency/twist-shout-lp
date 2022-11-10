@@ -41,15 +41,17 @@ header{
 }
 #services{
     .services-wrap{
-        div{
-            font-weight: 700;
-            color: var(--white);
-            border-radius: 5px;
-            background-color: var(--yellow);
-            width: 100%;
-            cursor: pointer;
-            &:hover{
-                background-color: var(--black);
+        .grid{
+            div{
+                font-weight: 700;
+                color: var(--white);
+                border-radius: 5px;
+                background-color: var(--yellow);
+                width: 100%;
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--black);
+                }
             }
         }
     }
